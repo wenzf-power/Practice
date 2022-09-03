@@ -45,8 +45,8 @@ public class ReverseList {
     }
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode();
         Random random = new Random();
+        ListNode listNode = new ListNode(random.nextInt(10));
         for (int i = 0; i < SIZE; i++) {
             listNode.add(random.nextInt(10));
         }
@@ -60,7 +60,7 @@ public class ReverseList {
 /**
  * 结果示例
  * 反转前的链表：
- * 0->9->2->2->1->2->7->6->9->5->9
+ * 6->2->4->8->5->3->7->5->0->4->1
  * 反转之后的链表：
- * 9->5->9->6->7->2->1->2->2->9->0
+ * 1->4->0->5->7->3->5->8->4->2->6
  */
