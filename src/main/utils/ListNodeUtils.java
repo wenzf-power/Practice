@@ -17,9 +17,9 @@ public class ListNodeUtils {
     * @return: ListNode
     */
     public static ListNode createListNode(int length) {
-        ListNode listNode = new ListNode();
         Random random = new Random();
-        for (int i = 0; i < length; i++) {
+        ListNode listNode = new ListNode(random.nextInt(100));
+        for (int i = 1 ; i < length; i++) {
             listNode.add(random.nextInt(100));
         }
         return listNode;
