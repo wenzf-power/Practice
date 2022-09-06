@@ -27,7 +27,7 @@ public class MergeListNode {
         if (listNode1 == null || listNode2 == null) {
             return listNode1 != null ? listNode1 : listNode2;
         }
-        if (listNode1.val < listNode2.val) {
+        if (listNode1.val <= listNode2.val) {
              listNode1.next = merge(listNode1.next, listNode2);
              return listNode1;
         }else {
@@ -36,3 +36,9 @@ public class MergeListNode {
         }
     }
 }
+/***
+* 运行结果示例：
+ * 3->8->22->42->47->62->75->81
+ * 13->22->45->46->80->85->97
+ * 3->8->13->22->22->42->45->46->47->62->75->80->81->85->97
+*/
